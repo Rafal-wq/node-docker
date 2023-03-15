@@ -1,50 +1,39 @@
-## Description
+# Description
 
-# node-docker
+## node-docker
 This is basic repository of node and docker
 
 
 To download this app, write :
 
 ```bash
-$ git clone https://github.com/Rafal-wq/shopBE.git
+$ git clone https://github.com/Rafal-wq/node-docker.git
 ```
+
+## Build the app
+
+First you need to build this app in this way :
+
+```bash
+# building image
+$ docker build -t node-docker .
+```
+
 
 ## Running the app
 
-Before you run this app you need to download all of packages from packed.json .
-Easily way to do this :
+You can run this app in this way :
 
 ```bash
-# development
-$ npm install
+# running image
+$ docker run -p 3000:3000 node-docker
 ```
-
-Next you need to create database (ex: mysql, mysql2) and config it in src / config / config.example.ts .
-There you find default settings to do this (change them to make it work properly.)
-
-To run :
-
-```bash
-# development
-$ nest start
-```
-
-# watch mode
-```bash
-# development
-$ nest start --watch
-```
-
-## Endpoints
-
-# Registration of user :
+If application runs properly, you will see this command in terminal :
 <p>
-<a href="" target="blank"><img src="https://iili.io/Qquze2.png" alt="User registration" /></a>
+<a ><img src="https://i.ibb.co/vDnrSX3/terminal-listenning.png" alt="Terminal command returns" /></a>
 </p>
 
-# Login of user (with correct password) :
-
+In your browser you will see :
 <p>
-<a href="https://ibb.co/84yhF9r" target="blank"><img src="https://i.ibb.co/zH3kKZX/Logowanie-poprawne-has-o.png" alt="User registration" /></a>
+<a><img src="https://i.ibb.co/gM7Gt2d/browser.png" alt="Browser see this command" /></a>
 </p>
